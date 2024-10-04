@@ -1,2 +1,2 @@
 # evelyn-davis.github.io
-Homepage
+Homepage for a talented musican. Stay "tuned" for more!
