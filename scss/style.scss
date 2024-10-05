@@ -14,7 +14,10 @@ body {
   background-color: lighten(black,10%);
   color: white;
   font-size: calc(16px + 0.5vw);
-  padding: 3em;
+  padding: 20px;
+  @media #{$md}{
+    padding: 3em;
+  }
 }
 
 .viz { 
@@ -31,6 +34,7 @@ body {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 h1.h1-title {

@@ -9,7 +9,12 @@ body {
   background-color: #1a1a1a;
   color: white;
   font-size: calc(16px + 0.5vw);
-  padding: 3em;
+  padding: 20px;
+}
+@media only screen and (min-width : 992px) {
+  body {
+    padding: 3em;
+  }
 }
 
 .viz {
@@ -25,6 +30,7 @@ body {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 h1.h1-title {
