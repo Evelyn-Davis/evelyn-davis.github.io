@@ -48,11 +48,11 @@ h4 {
   border: 1px solid red;
 }
 
-.container {
-  margin: auto;
-  // padding: 1em;
-  max-width: 1400px;
-}
+// .container {
+//   margin: auto;
+//   // padding: 1em;
+//   max-width: 1400px;
+// }
 
 .img-responsive {
   width: 100%;
@@ -63,7 +63,7 @@ h4 {
 
 h1.h1-title {
   font-size: calc(16px + 1vw);
-  margin-bottom: 2vh;
+  // margin-bottom: 2vh;
 }
 
 a:link, a:visited {
@@ -71,6 +71,15 @@ a:link, a:visited {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+  }
+}
+
+.show {
+  .superscript {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: calc(5px + 0.5vw);
+    color: hsla(0, 0%, 50%, 1);
   }
 }
 
