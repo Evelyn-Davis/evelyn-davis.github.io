@@ -71,6 +71,14 @@ a:link:hover, a:visited:hover {
   color: hsl(0, 0%, 50%);
 }
 
+.outline-25 {
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+}
+
+.outline-50 {
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+
 footer {
   padding-top: 100px;
   font-size: calc(8px + 0.5vw);
