@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,9 +9,9 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  background-color: #1a1a1a;
+  background-color: #1A1A1D;
   color: white;
-  font-size: calc(16px + 0.25vw);
+  font-size: calc(12px + 0.25vw);
   font-weight: 100;
   letter-spacing: 0.5px;
   padding: 20px;
@@ -20,9 +22,16 @@ body {
   }
 }
 
+a:link, a:visited {
+  color: #AEEA94;
+  text-decoration: none;
+}
+a:link:hover, a:visited:hover {
+  text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Old Standard TT", Times, serif;
-  letter-spacing: -0.5px;
+  font-family: "Young Serif", Times, serif;
 }
 
 h1 {
@@ -38,7 +47,15 @@ h2 {
 h4 {
   font-size: calc(20px + 0.5vw);
   font-weight: 500;
-  font-style: italic;
+}
+
+.header .title-logo {
+  font-family: "Young Serif";
+  font-size: calc(18px + 0.5vw);
+}
+
+.nav-style a {
+  font-family: "Young Serif";
 }
 
 .viz {
@@ -52,16 +69,9 @@ h4 {
   border-radius: 10px;
 }
 
-h1.h1-title {
-  font-size: calc(16px + 1vw);
-}
-
-a:link, a:visited {
-  color: orange;
-  text-decoration: none;
-}
-a:link:hover, a:visited:hover {
-  text-decoration: underline;
+.h1-title h1 {
+  font-size: calc(60px + 4vw);
+  font-family: "Herr Von Muellerhoff";
 }
 
 .show .superscript {
@@ -105,4 +115,16 @@ footer hr {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-style: italic;
+}
+
+.herr-von-muellerhoff-regular {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }

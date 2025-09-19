@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,16 +8,22 @@
   padding: 0;
 }
 $system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$headline-font: "Young Serif";
+
 $xs: "only screen and (min-width : 480px)";
 $sm: "only screen and (min-width : 767px)";
 $md: "only screen and (min-width : 992px)";
 $lg: "only screen and (min-width : 1200px)";
 
+$color-bkg: #1A1A1D;
+// $color-bk: lighten(black,10%);
+$color-link: #AEEA94;
+
 body {
   font-family: $system-fonts;
-  background-color: lighten(black,10%);
+  background-color: $color-bkg;
   color: white;
-  font-size: calc(16px + 0.25vw);
+  font-size: calc(12px + 0.25vw);
   font-weight: 100;
   letter-spacing: 0.5px;
   padding: 20px;
@@ -24,9 +32,17 @@ body {
   }
 }
 
+a:link, a:visited {
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Old Standard TT", Times, serif;
-  letter-spacing: -0.5px;
+  font-family: $headline-font, Times, serif;
+  // letter-spacing: -0.5px;
 }
 h1 {
   font-size: calc(40px + 0.5vw);
@@ -41,18 +57,23 @@ h2 {
 h4 {
   font-size: calc(20px + 0.5vw);
   font-weight: 500;
-  font-style: italic;
+  // font-style: italic;
+}
+
+.header {
+  .title-logo {
+    font-family: $headline-font;
+    font-size: calc(18px + 0.5vw);
+  }
+}
+
+.nav-style a {
+  font-family: $headline-font;
 }
 
 .viz { 
   border: 1px solid red;
 }
-
-// .container {
-//   margin: auto;
-//   // padding: 1em;
-//   max-width: 1400px;
-// }
 
 .img-responsive {
   width: 100%;
@@ -61,17 +82,10 @@ h4 {
   border-radius: 10px;
 }
 
-h1.h1-title {
-  font-size: calc(16px + 1vw);
+.h1-title h1 {
+  font-size: calc(60px + 4vw);
   // margin-bottom: 2vh;
-}
-
-a:link, a:visited {
-  color: orange;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
+  font-family: "Herr Von Muellerhoff";
 }
 
 .show {
@@ -117,4 +131,14 @@ footer {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-style: italic;
+}
+.herr-von-muellerhoff-regular {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
