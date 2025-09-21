@@ -95,8 +95,8 @@ h4 {
 
 footer {
   padding-top: 100px;
-  font-size: calc(8px + 0.5vw);
-  color: hsla(0, 0%, 90%, 0.5);
+  font-size: calc(8px + 0.15vw);
+  color: hsla(0, 0%, 90%, 0.75);
 }
 footer hr {
   border: 1px solid hsla(0, 0%, 90%, 0.5);
@@ -123,6 +123,16 @@ footer hr {
 
 .btn-close {
   filter: invert(1);
+}
+
+.card-item strong {
+  color: white;
+}
+.card-item span {
+  color: hsl(0, 0%, 70%);
+}
+.card-item:hover span {
+  color: #AEEA94;
 }
 
 .old-standard-tt-regular {

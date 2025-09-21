@@ -114,8 +114,8 @@ footer {
     margin-bottom: 10px;
   }
   padding-top: 100px;
-  font-size: calc(8px + 0.5vw);
-  color: hsla(0, 0%, 90%, 0.5);
+  font-size: calc(8px + 0.15vw);
+  color: hsla(0, 0%, 90%, 0.75);
 }
 
 // MODAL
@@ -139,6 +139,18 @@ footer {
 
 .btn-close {
   filter: invert(1);
+}
+
+.card-item {
+  strong {
+    color: white;
+  }
+  span {
+    color: hsla(0, 0%, 70%, 1);
+  } 
+  &:hover span {
+    color: $color-link;
+  }
 }
 
 
