@@ -69,8 +69,10 @@ h4 {
 
 .nav-style a {
   font-family: $headline-font;
-  display: none;
 }
+.nav-item :first-child {
+    margin-right: 1em !important;
+  }
 
 .viz { 
   border: 1px solid red;
@@ -115,6 +117,32 @@ footer {
   font-size: calc(8px + 0.5vw);
   color: hsla(0, 0%, 90%, 0.5);
 }
+
+// MODAL
+.modal-content {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: 1px solid #222;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+.modal-body {
+  color: #fff;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+
+// fonts
 
 .old-standard-tt-regular {
   font-family: "Old Standard TT", serif;

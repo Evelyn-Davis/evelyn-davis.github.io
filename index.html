@@ -57,13 +57,15 @@
 
 <body>
 
-  <div class='container header d-flex mb-5 justify-content-between'>
-    <div class='title-logo'>B. Evelyn Davis</div>
-    <div class='nav-style'>
-      <!-- <a href='about mx-8'>About</a> -->
-      <a href='contact'>Contact</a>
+<div class='container header d-flex mb-5 justify-content-between'>
+  <div class='title-logo'><a href='index.html'>B. Evelyn Davis</a></div>
+  <div class='nav-style d-flex'>
+    <div class='nav-item'><a href='about.html'>About</a></div>
+    <div class='nav-item'>
+      <a href='#' data-bs-toggle='modal' data-bs-target='#contactModal'>Contact</a>
     </div>
   </div>
+</div>
 
   <header class='container'>
 
@@ -88,23 +90,35 @@
 
       <div class='row'>
 
-        <div class='col-12 col-md-4'>
+        <div class='album mb-5 col-6 col-md-3'>
           <img src='src/img/hidden-danger-lets-me-in.jpg' alt='' class='img-fluid mb-4' >
           <strong>Hidden Danger Lets Me In</strong><br>
           <a href='https://cleanfeedrecords.bandcamp.com/album/hidden-danger-lets-me-in' target='_blank'>Buy on Bandcamp →</a>
         </div>
 
-        <div class='col-12 col-md-4'>
+        <div class='album mb-5 col-6 col-md-3'>
           <img src='src/img/cover-witofthestair-sq.jpg' alt='' class='img-fluid mb-4 outline-25' >
           <strong>The Wit of the Stair</strong><br>
           <a href='https://evelyndavismusic.bandcamp.com/album/the-wit-of-the-stair' target='_blank'>Buy on Bandcamp →</a>
         </div>
 
-        <div class='col-12 col-md-4'>
+        <div class='album mb-5 col-6 col-md-3'>
           <img src='src/img/chiromancer-guilty-pleasure.jpg' alt='' class='img-fluid mb-4' >
-          <strong>Guilty Pleasure</strong><br>
+          <strong>Guilty Pleasure - Chiromancer</strong><br>
           <a href='https://chiromancerofficial.bandcamp.com/album/guilty-pleasure' target='_blank'>Buy on Bandcamp →</a>
         </div>
+
+        <div class='album mb-5 col-6 col-md-3'>
+          <img src='src/img/Lantskap-Logic-trio.jpg' alt='' class='img-fluid mb-4' >
+          <strong>Lantskap Logic trio</strong><br>
+          <a href='https://cleanfeedrecords.bandcamp.com/album/lantskap-logic' target='_blank'>Buy on Bandcamp →</a>
+        </div>      
+
+        <div class='album mb-5 col-6 col-md-3'>
+          <img src='src/img/IEB-perkunas.jpg' alt='' class='img-fluid mb-4' >
+          <strong>Perkunas - Inner Ear Brigade</strong><br>
+          <a href='https://innerearbrigade.bandcamp.com/album/perkunas' target='_blank'>Buy on Bandcamp →</a>
+        </div>        
 
       </div>
   </div><!-- end container -->
@@ -141,6 +155,28 @@
     </div>
 
   </div> <!-- container end -->
+
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>
+          Email me at<br>
+          <a href="mailto:evelyndavismusic@gmail.com">evelyndavismusic@gmail.com</a>
+        </p>
+        <p>
+          Insta<br> <a href='https://www.instagram.com/tantine_mere/?hl=en' target='_blank'>@tantine_mere</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <footer class='container'>

@@ -56,7 +56,10 @@ h4 {
 
 .nav-style a {
   font-family: "Young Serif";
-  display: none;
+}
+
+.nav-item :first-child {
+  margin-right: 1em !important;
 }
 
 .viz {
@@ -98,6 +101,28 @@ footer {
 footer hr {
   border: 1px solid hsla(0, 0%, 90%, 0.5);
   margin-bottom: 10px;
+}
+
+.modal-content {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: 1px solid #222;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+.modal-body {
+  color: #fff;
+}
+
+.btn-close {
+  filter: invert(1);
 }
 
 .old-standard-tt-regular {
