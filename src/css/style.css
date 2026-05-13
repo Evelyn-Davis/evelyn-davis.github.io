@@ -110,6 +110,36 @@ h4 {
   animation: hero-settle 1.4s ease-out 0.4s both;
 }
 
+.hero-cta {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.6em 1.2em;
+  font-family: "Young Serif", Times, serif;
+  font-size: calc(14px + 0.2vw);
+  border: 1px solid #AEEA94;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  animation: hero-settle 1.4s ease-out 0.8s both;
+}
+.hero-cta:link, .hero-cta:visited {
+  color: #AEEA94;
+  text-decoration: none;
+}
+.hero-cta:hover {
+  background-color: #AEEA94;
+  color: #1A1A1D;
+  text-decoration: none;
+}
+
+.checker-divider {
+  height: 24px;
+  background-image: conic-gradient(#AEEA94 0 25%, transparent 0 50%, #AEEA94 0 75%, transparent 0);
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  opacity: 0.35;
+  margin: 2.5rem 0;
+}
+
 @keyframes hero-settle {
   from {
     opacity: 0;

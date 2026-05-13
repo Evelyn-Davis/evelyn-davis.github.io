@@ -121,6 +121,36 @@ h4 {
   animation: hero-settle 1.4s ease-out 0.4s both;
 }
 
+.hero-cta {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.6em 1.2em;
+  font-family: $font-headline, Times, serif;
+  font-size: calc(14px + 0.2vw);
+  border: 1px solid $color-link;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  animation: hero-settle 1.4s ease-out 0.8s both;
+  &:link, &:visited {
+    color: $color-link;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: $color-link;
+    color: $color-bkg;
+    text-decoration: none;
+  }
+}
+
+.checker-divider {
+  height: 24px;
+  background-image: conic-gradient($color-link 0 25%, transparent 0 50%, $color-link 0 75%, transparent 0);
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  opacity: 0.35;
+  margin: 2.5rem 0;
+}
+
 @keyframes hero-settle {
   from {
     opacity: 0;
