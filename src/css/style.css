@@ -21,6 +21,16 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .container { max-width: 1280px; }
+}
+@media (min-width: 1400px) {
+  .container { max-width: 1480px; }
+}
+@media (min-width: 1800px) {
+  .container { max-width: 1680px; }
+}
+
 a:link, a:visited {
   color: #AEEA94;
   text-decoration: none;
@@ -192,10 +202,21 @@ h4 {
 }
 
 .featured-album {
+  scroll-margin-top: 2rem;
   margin-bottom: 3rem;
 }
 .featured-album .bandcamp-embed {
   display: block;
+  height: 600px;
+}
+@media (min-width: 576px) {
+  .featured-album .bandcamp-embed { height: 720px; }
+}
+@media (min-width: 768px) {
+  .featured-album .bandcamp-embed { height: 800px; }
+}
+@media (min-width: 992px) {
+  .featured-album .bandcamp-embed { height: 870px; }
 }
 .featured-album .featured-title {
   font-family: "Young Serif", Times, serif;
@@ -216,10 +237,18 @@ h4 {
   margin-bottom: 1.25rem;
 }
 
-.show hr {
-  border: none;
-  border-top: 2px solid hsla(0, 0%, 100%, 0.35);
-  margin-bottom: 0;
+.show {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 1.5rem 1.5rem;
+  border-radius: 4px;
+  height: 100%;
+  transition: transform 0.25s ease, opacity 0.3s ease;
+}
+.show:hover {
+  transform: scale(1.02);
+}
+.show:hover .show-title {
+  color: #AEEA94;
 }
 .show .show-title {
   font-family: "Young Serif", Times, serif;
@@ -228,6 +257,7 @@ h4 {
   line-height: 1.2;
   color: white;
   margin-bottom: 0.25rem;
+  transition: color 0.25s ease;
 }
 .show .show-subtitle {
   color: hsla(0, 0%, 80%, 1);
@@ -257,8 +287,44 @@ h4 {
   font-weight: 500;
 }
 
+#past-shows .show {
+  opacity: 0.45;
+}
+#past-shows .show:hover {
+  opacity: 1;
+}
+
 .outline-25 {
   border: 1px solid hsla(0, 0%, 100%, 0.25);
+}
+
+.portrait-frame {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.portrait {
+  display: block;
+  border-radius: 3px;
+  transform: rotate(-2deg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.portrait:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55);
+}
+
+.portrait-note {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: calc(32px + 0.6vw);
+  line-height: 1;
+  color: #D4B996;
+  text-align: right;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  transform: rotate(-3deg);
+  opacity: 0.9;
 }
 
 .outline-50 {
@@ -297,6 +363,12 @@ footer hr {
   filter: invert(1);
 }
 
+@media (hover: none) {
+  .card-item .buy-link {
+    opacity: 1 !important;
+  }
+}
+
 .card-item {
   transition: transform 0.25s ease;
 }
@@ -319,7 +391,13 @@ footer hr {
   transition: opacity 0.3s ease;
 }
 .card-item img {
-  transition: transform 0.4s ease;
+  border-radius: 2px;
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.55),
+    0 1px 0 0 rgba(255, 255, 255, 0.04) inset,
+    0 -1px 0 0 rgba(0, 0, 0, 0.5) inset,
+    0 0 0 1px rgba(0, 0, 0, 0.35) inset;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .card-item:hover {
   transform: translateY(-6px);
